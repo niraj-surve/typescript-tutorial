@@ -1,12 +1,12 @@
 function App() {
   type Person = {
     name: string,
-    age?: number,
+    age?: number | string, // Union type
   }
 
   let person: Person = {
     name: "Niraj",
-    // age: 22
+    age: '22'
   }
 
   return (
