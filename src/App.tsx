@@ -1,18 +1,23 @@
 function App() {
-  type Person = {
-    name: string,
-    age?: number | string, // Union type
-  }
+  let myName: string = "";
 
-  let person: Person = {
-    name: "Niraj",
-    age: '22'
-  }
+  // function printName(name: string){
+  //   myName = name
+  //   console.log(name)
+  // }
+
+  // printName("Niraj");
+  
+  let printName: Function;
+  // let printName: (name: string) => unknown; // When the return type can be anything.... Instead of any, unknown is recommended
+  // let printName: (name: string) => void; // Returns undefined
+  // let printName: (name: string) => void; // Returns nothing
+
+  
 
   return (
     <>
-      <h1>Hello {person.name}</h1>
-      <h2>Your age is {person.age}</h2>
+      <h1>Hello {myName}</h1>
     </>
   );
 }
