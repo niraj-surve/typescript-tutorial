@@ -1,19 +1,18 @@
 function App() {
-  let myName: string = "";
+  type X = {
+    a: string,
+    b: number
+  }
 
-  // function printName(name: string){
-  //   myName = name
-  //   console.log(name)
-  // }
+  type Y = X & {
+    c: string,
+    d: number,
+  }
 
-  // printName("Niraj");
-  
-  let printName: Function;
-  // let printName: (name: string) => unknown; // When the return type can be anything.... Instead of any, unknown is recommended
-  // let printName: (name: string) => void; // Returns undefined
-  // let printName: (name: string) => void; // Returns nothing
-
-  
+  let y: Y = {
+    c: "Niraj",
+    d: 23
+  }
 
   return (
     <>
